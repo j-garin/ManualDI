@@ -1,0 +1,2 @@
+include ':app', ':interfaces', ':implementations', ':ui'
+rootProject.name='ManualDIApplication'
