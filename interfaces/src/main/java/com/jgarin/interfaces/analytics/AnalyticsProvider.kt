@@ -1,4 +1,4 @@
-package com.jgarin.interfaces
+package com.jgarin.interfaces.analytics
 
 interface AnalyticsProvider {
 

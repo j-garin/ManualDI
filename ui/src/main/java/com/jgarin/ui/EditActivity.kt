@@ -2,9 +2,9 @@ package com.jgarin.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.jgarin.interfaces.Analytics
-import com.jgarin.interfaces.DiTreeProvider
-import com.jgarin.interfaces.Preferences
+import com.jgarin.interfaces.analytics.Analytics
+import com.jgarin.interfaces.base.DiTreeProvider
+import com.jgarin.interfaces.preferences.Preferences
 import kotlinx.android.synthetic.main.activity_edit.*
 
 class EditActivity : AppCompatActivity() {

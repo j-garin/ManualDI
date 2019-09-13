@@ -1,9 +1,9 @@
-package com.jgarin.manualdiapplication
+package com.jgarin.manualdiapplication.entry
 
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import com.jgarin.ui.UiModule
+import com.jgarin.ui.di.UiModule
 
 class MainActivity: AppCompatActivity() {
 
