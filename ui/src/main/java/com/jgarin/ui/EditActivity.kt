@@ -18,8 +18,8 @@ class EditActivity : AppCompatActivity() {
 
         // we can only use field injection for Activities/Fragments/BroadcastReceivers/Services
         // because Android framework requires them to have empty constructors
-        analytics = (application as DiTreeProvider).diTree.analyticsProvider.analytics
-        preferences = (application as DiTreeProvider).diTree.preferencesProvider.preferences
+        analytics = (application as DiTreeProvider).diTree.analytics
+        preferences = (application as DiTreeProvider).diTree.preferences
 
         analytics.log("Main activity created")
 

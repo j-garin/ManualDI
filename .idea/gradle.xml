@@ -8,9 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/analytics" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/implementations" />
             <option value="$PROJECT_DIR$/interfaces" />
+            <option value="$PROJECT_DIR$/preferences" />
             <option value="$PROJECT_DIR$/ui" />
           </set>
         </option>
