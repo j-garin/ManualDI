@@ -1,10 +1,10 @@
 package com.jgarin.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.jgarin.interfaces.analytics.Analytics
-import com.jgarin.interfaces.base.DiTreeProvider
 import com.jgarin.interfaces.preferences.Preferences
+import com.jgarin.ui.di.UiModuleInternal
 import kotlinx.android.synthetic.main.activity_edit.*
 
 class EditActivity : AppCompatActivity() {
@@ -16,10 +16,13 @@ class EditActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit)
 
+        // this will be GCed after this method finishes, so we're not leaking context
+        val internalModule = UiModuleInternal(this)
+
         // we can only use field injection for Activities/Fragments/BroadcastReceivers/Services
         // because Android framework requires them to have empty constructors
-        analytics = (application as DiTreeProvider).diTree.analytics
-        preferences = (application as DiTreeProvider).diTree.preferences
+        analytics = internalModule.analytics
+        preferences = internalModule.preferences
 
         analytics.log("Main activity created")
 
