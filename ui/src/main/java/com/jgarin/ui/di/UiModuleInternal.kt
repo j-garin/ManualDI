@@ -6,5 +6,5 @@ import com.jgarin.interfaces.base.DiTreeProvider
 import com.jgarin.interfaces.preferences.PreferencesProvider
 
 internal class UiModuleInternal(context: Context) :
-    AnalyticsProvider by (context.applicationContext as DiTreeProvider).diTree.analyticsProvider,
-    PreferencesProvider by (context.applicationContext as DiTreeProvider).diTree.preferencesProvider
+    AnalyticsProvider by (context.applicationContext as DiTreeProvider).diTree,
+    PreferencesProvider by (context.applicationContext as DiTreeProvider).diTree
