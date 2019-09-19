@@ -3,7 +3,7 @@ package com.jgarin.manualdiapplication.entry
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import com.jgarin.navigation.Navigation
+import com.jgarin.navigation.navigation
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +15,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun launchNavigationScreen() {
-        (application as com.jgarin.navigation.Navigation).goToHome(this)
+        navigation.goToHome(this)
     }
 }
