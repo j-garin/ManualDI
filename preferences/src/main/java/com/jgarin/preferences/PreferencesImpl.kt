@@ -1,4 +1,4 @@
-package com.jgarin.implementations.preferences
+package com.jgarin.preferences
 
 import android.content.Context
 import android.preference.PreferenceManager

@@ -1,2 +1,2 @@
-include ':app', ':interfaces', ':implementations', ':ui'
+include ':app', ':interfaces', ':analytics', ':ui', ':preferences'
 rootProject.name='ManualDIApplication'
