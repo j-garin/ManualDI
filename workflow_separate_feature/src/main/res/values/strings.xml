@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SeparateFeature</string>
+    <string name="separate_workflow_text">This is a separate workflow with its dependencies</string>
+</resources>

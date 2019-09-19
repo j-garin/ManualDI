@@ -1,2 +1,2 @@
-include ':app', ':interfaces', ':analytics', ':ui', ':preferences'
+include ':app', ':interfaces', ':analytics', ':workflow_edit', ':preferences', ':workflow_separate_feature', ':workflow_navigation', ':workflow_transitive_dependency', ':navigation', ':repo', ':api', ':serialization'
 rootProject.name='ManualDIApplication'

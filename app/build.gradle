@@ -32,6 +32,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':interfaces')
     implementation project(path: ':analytics')
-    implementation project(path: ':ui')
+    implementation project(path: ':workflow_edit')
     implementation project(path: ':preferences')
+    implementation project(path: ':workflow_separate_feature')
+    implementation project(path: ':workflow_navigation')
+    implementation project(path: ':workflow_transitive_dependency')
+    implementation project(path: ':navigation')
 }

@@ -3,18 +3,18 @@ package com.jgarin.manualdiapplication.entry
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import com.jgarin.ui.di.UiModule
+import com.jgarin.navigation.Navigation
 
-class MainActivity: AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Handler().postDelayed({launchEditScreen()}, 500)
+        Handler().postDelayed({ launchNavigationScreen() }, 500)
 
     }
 
-    private fun launchEditScreen() {
-        UiModule().launch(this)
+    private fun launchNavigationScreen() {
+        (application as com.jgarin.navigation.Navigation).goToHome(this)
     }
 }
